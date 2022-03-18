@@ -1,0 +1,195 @@
+/* vars */
+:root {
+    scroll-behavior: smooth;
+
+    --darkTransparentBg: #060606eb;
+    --primary: #287c81fa;
+    --titlesFont: 'Old Standard TT',serif;
+    --sansSerifFont: 'Lato', sans-serif;
+}
+
+/* reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+body {
+    font-family: var(--sansSerifFont);
+}
+
+h1, h2, h3 {
+    font-family: var(--titlesFont);
+}
+
+.hero-background {
+    background-image: url(../img/hero-banner.webp);
+    background-size: 141vh;
+    background-position: -69vh 0;
+}
+
+.hero-banner {
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9532855378479517) 24%, rgba(0,212,255,0) 100%); */
+    background: linear-gradient(90deg, rgb(0 0 0) 23%, rgb(0 0 0 / 82%) 44%, rgb(19 0 32 / 28%) 100%);
+}
+nav {
+    transition: top 0.8s;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.title-container {
+    width: min-content;
+}
+
+.amaze-title {
+    transform: scale(1.3);
+}
+
+/* single payment section */
+
+.single-payment-section {
+    background-image: url(../img/girl-amazed1.webp);
+    background-size: 135%;
+    background-position: -250%;
+    position: relative;
+}
+
+.offer-band-box {
+    height: 6em;
+    width: 7rem;
+    overflow: hidden;
+}
+
+.offer-band {
+    font-family: 'Times New Roman', Times, serif;
+    width: 6em;
+    background-image: linear-gradient(359deg, black 23%, #b3b3b354 55%, #ff040400), linear-gradient(180deg, black 100%, #6c5d5d9c 100%, #ff000000);
+    transform: rotate(45deg) translate(16%, 20%);
+}
+
+.pages-background {
+    background-image: url(../img/fondo-prueba1.png);
+    background-size: 1041%;
+    background-position: 76% 100%;  
+}
+
+/* ABOUT */
+
+.about-bg-img {
+    background-image: url(../img/cards-background.webp);
+    background-size: 205%;
+    background-color: #fffffff0;
+    background-blend-mode: lighten;
+}
+
+/* course goals section */
+
+.goals-card {
+    height: 40vh;
+}
+
+.goals-card-fx {
+    background: linear-gradient(90deg, #ffffff00 60%, #0000002b); 
+}
+
+.goals-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -1px;
+}
+
+.goals-img-fx {
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0), #f6f8f9);
+    /* background-repeat: no-repeat; */
+}
+
+.goals-img-1 {
+    background-image: url(../img/Alan-400x220.webp);
+}
+
+.goals-img-2 {
+    background-image: url(../img/Guadi-400x220-2.png);
+}
+
+.goals-img-3 {
+    background-image: url(../img/foro-crop-3.png);
+}
+
+/* FAQS PAGE */
+
+.faqs p {
+    text-align: justify;
+}
+
+.fa-li {
+    transition: 0.2s ease-out;
+}
+
+input:checked + li label .fa-li {
+    transform: rotate(180deg);
+}
+
+/* guarantee section */
+
+.guarantee {
+    background: url(../img/cardsbackground2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.guarantee-card img {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* TESTIMONIALS PAGE */
+
+.testimonials-bg {
+    background-image: url(../img/alan-amazed.webp);
+    background-position-y: 93%;
+}
+
+/* md */
+@media screen and (min-width:768px) {
+    html {
+        font-size: 1.15rem;
+    }
+
+    .pages-background {
+        background-size: cover;
+        background-position: right top;
+    }
+}
+
+/* lg */
+@media screen and (min-width:992px) {
+    html {
+        font-size: 0.9rem;
+    }
+    
+    .goals-card {
+        height: 79vh;
+    }
+
+    .goals-img-container {
+        height: 50%!important;
+    } 
+
+    .pages-background {
+        height: 55vh!important;
+    }
+
+    .header-titles {
+        font-size: 4rem!important;
+    }
+
+    .testimonials-bg {
+        background-size: 100%;
+        background-position-y: 82%;
+    }
+}
+
